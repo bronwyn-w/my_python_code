@@ -28,12 +28,28 @@ favnums = {
     'gaston':20,
     'wilson':25,
     }
+print(f"\n")
+for name, num in favnums.items():
+    print(f"{name.title()}'s favorite number is {num}")
 
-print(f"\nBianca's favorite number is {favnums['bianca']}")
-print(f"Xenia's favorite number is {favnums['xenia']}")
-print(f"Zephyr's favorite number is {favnums['zephyr']}")
-print(f"Gaston's favorite number is {favnums['gaston']}")
-print(f"Wilson's favorite number is {favnums['wilson']}")
+if 17 not in favnums.values():
+    print(f"What, no ones favorite number is 17?!?!")
+
+people = ['bianca','tori','zephyr','izzy','gaston','zola']
+
+print(f"\n")
+for person in people[:]:
+    if person not in favnums.keys():
+        print(f"{person.title()}, what is your favorite number?")
+    else:
+        print(f"{person.title()}'s favorite number is {favnums[person]}")
+
+#print(favnums.keys())
+#print(favnums.values())
+#print(f"Xenia's favorite number is {favnums['xenia']}")
+#print(f"Zephyr's favorite number is {favnums['zephyr']}")
+#print(f"Gaston's favorite number is {favnums['gaston']}")
+#print(f"Wilson's favorite number is {favnums['wilson']}")
 
 pythonterms = {
     'if':'if statements are used to check conditions',
@@ -42,10 +58,9 @@ pythonterms = {
     'dictionary':'dictionaries are multi-dimensional arrays',
     }
 
-print(f"\nNew python terms I learned:")
-print(f"\tif: {pythonterms['if']}")
-print(f"\tfor: {pythonterms['for']}")
-print(f"\tlist: {pythonterms['list']}")
-print(f"\tdictionary: {pythonterms['dictionary']}")
+pythonterms['print'] = 'print statements produce output'
 
+print(f"\nNew python terms I learned:")
+for term,description in pythonterms.items():
+    print(f"\t{term}: {description}")
       
