@@ -67,5 +67,3 @@ for city, info in cities.items():
     print(f"\n{city.title()} is located in {info['state'].title()},")
     print(f"Its population is {info['population']} and {info['growth']}.")
     
-
-
