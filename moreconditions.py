@@ -2,7 +2,7 @@
 
 users=['FALCON','eagle','Hawk','cardinal','admin','bluejay','sparrow']
 newusers=['wilson','gaston','Hawk','Zephyr','falcon']
-print(users)
+print(f"Current users: {users}")
 
 lowercaseusers=[]
 for user in users[:]:
@@ -22,15 +22,15 @@ else:
 
 #print(users)
 
-for num in range(1,10):
-    if num == 1:
-        print("1st")
-    elif num == 2:
-        print("2nd")
-    elif num == 3:
-        print("3rd")
-    else:
-        print(f"{num}th")
+#for num in range(1,10):
+#    if num == 1:
+#        print("1st")
+#    elif num == 2:
+#        print("2nd")
+#    elif num == 3:
+#        print("3rd")
+#    else:
+#        print(f"{num}th")
 
     
 
